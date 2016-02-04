@@ -172,7 +172,7 @@ class ViewController: UIViewController {
     
     func setImageForSpot(spot:Int, player: Player){
         var playerMark: String
-        if player == .UserPlayer || player == .User1 {
+        if player == .User1 || player == .User1 {
             playerMark = "x"
         }
         else {
