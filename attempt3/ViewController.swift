@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     }
     
     func checkForWin(){
-        var whoWon = ["\(player1Name)": 2, "\(player2Name)": 3]
+        let whoWon = ["\(player1Name)": 2, "\(player2Name)": 3]
     
         for (key,value) in whoWon {
             if ((plays[6] == value && plays[7] == value && plays[8] == value) || //across the bottom
@@ -111,7 +111,7 @@ class ViewController: UIViewController {
     
     //Gesture Reocgnizer method
     func imageClicked(reco: UITapGestureRecognizer) {
-        var imageViewTapped = reco.view as! UIImageView
+        let imageViewTapped = reco.view as! UIImageView
         //Prevents the system from recognizing a tap in a box that is already filled
         if(plays[imageViewTapped.tag] == nil) {
                 if plays[imageViewTapped.tag] == nil && !done {
